@@ -8,3 +8,6 @@ Currently adding touch sensor to be able to detect walls so robot can make turns
 In addition, working on navigation.
 ----------
 ![D6295E5D-5358-4934-BAF1-522472E21382_4_5005_c](https://github.com/elvis808/Matlab-Code-/assets/67409144/460c180a-5c00-44f7-87a8-1829b14e8966)
+
+3/20/24 - Coding Navigation Cont. from 3/18/24
+Implementing code to navigate EV3 robot to make turns and follow right side of the wall. The ultrasonic sensor senses wall by about 7-12 feet in distance so it is able to use the wall as a guide to go through the maze. 
