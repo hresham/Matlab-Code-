@@ -1,6 +1,9 @@
 Navigation Code
 Cont. from 3/18/24
 
+distance = brick.UltrasonicDist(4);
+display(distance);
+
 while 1
    distance = brick.UltrasonicDist(4);
    display(distance);
