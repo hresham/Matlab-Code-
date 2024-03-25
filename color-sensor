@@ -1,2 +1,5 @@
 3/25/24
-  Color sensor was added last week but implementing it now for demo.
+
+Color sensor was added last week but implementing it now for demo.
+Making it beep and stop at certain colors.
+
