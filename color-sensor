@@ -1,5 +1,49 @@
-3/25/24
+3/25/24 - 
 
 Color sensor was added last week but implementing it now for demo.
 Making it beep and stop at certain colors.
+
+------------------------------------------------------------
+
+3/27/24 - 
+Added color sensor from monday and was able to stop robot at designated colors - (red, green, blue)
+
+brick.SetColorMode(3, 2);
+color = brick.ColorCode(3);
+display(color);
+while 1
+   color = brick.ColorCode(3);
+   display(color);
+   brick.MoveMotor('AD', 50);
+   if color == 5
+       brick.StopAllMotors();
+       pause(1)
+       brick.MoveMotor('AD', 50);
+       pause(1)
+   end
+   if color == 2
+       brick.StopAllMotors();
+       brick.beep(1);
+       pause(.5)
+       brick.beep(1);
+       pause(2)
+       brick.MoveMotor('AD', 50);
+       pause(1)
+       color = brick.ColorCode(3);
+       display(color);
+   end
+   if color == 3
+       brick.StopAllMotors();
+       brick.beep(1);
+       pause(.5)
+       brick.beep(1);
+       pause(.5)
+       brick.beep(.5)
+       pause(2)
+       brick.MoveMotor('AD', 50);
+       pause(1)
+       color = brick.ColorCode(3);
+       display(color);
+   end
+end
 
