@@ -1,4 +1,4 @@
-Cont. from 3/18/24
+Cont. from 3/18/24:
 
 distance = brick.UltrasonicDist(4);
 display(distance);
@@ -21,7 +21,8 @@ end
 
 ----------------------------------------------------------------------------
 
-3/27/24-
+3/27/24: 
+
 distance = brick.UltrasonicDist(4);
 display(distance);
 while 1
