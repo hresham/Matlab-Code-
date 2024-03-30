@@ -14,6 +14,6 @@ In addition, working on navigation.
 Implementing code to navigate EV3 robot to make turns and follow right side of the wall. The ultrasonic sensor senses wall by about 7-12 feet in distance so it is able to use the wall as a guide to go through the maze. Ended the class finally figuring out how to navigate around a structure without hitting it.
 
 3/25 & 3/27 - Finalizing color sensor
-Added color sensor to navigation code and was able to make it stop at certain colors. Stoping at red for a second and made it beep for blue and green. 
+Added color sensor to navigation code and was able to make it stop at certain colors. Stoping at red for a second and made it beep for blue and green. Iterations are being made to make the robot run smoother, and more efficiently. 
 
 Youtube Link -> [(https://youtu.be/vt5fpE0bzSY](https://youtu.be/0KPv4HnEzPk))
