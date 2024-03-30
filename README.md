@@ -16,4 +16,4 @@ Implementing code to navigate EV3 robot to make turns and follow right side of t
 3/25 & 3/27 - Finalizing color sensor
 Added color sensor to navigation code and was able to make it stop at certain colors. Stoping at red for a second and made it beep for blue and green. Iterations are being made to make the robot run smoother, and more efficiently. 
 
-Youtube Link -> [(https://youtu.be/vt5fpE0bzSY](https://youtu.be/0KPv4HnEzPk))
+Youtube Link for current demo -> [(https://youtu.be/vt5fpE0bzSY](https://youtu.be/0KPv4HnEzPk))
