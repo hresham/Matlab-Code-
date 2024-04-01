@@ -47,3 +47,11 @@ while 1
         pause(1.85)
     end
 end
+
+--------------------------------------------
+
+4/1/24:
+
+Complemented a completely new design. Changed the tires, and added a new touch sensor on the right side. Had to adjust the code to adjust to new movement 
+from new tires and new weight distribution. 
+
