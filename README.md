@@ -27,3 +27,6 @@ Funny thing but we thought the entire maze had to be run through autonomously bu
 
 ![966CD001-27DE-4AFF-BA68-9CA060713EE3](https://github.com/elvis808/Matlab-Code-/assets/67409144/68c37703-e70f-406d-9d05-56e633180c08)
 
+4/8/24 - Implemented kill switch and tweak turn degree
+
+Today was an important day. We took off one touch sensor and turned it into a kill switch to make the process easier. We implemented a test case to be able to pick up grandma at blue and drop off grandma. Lowered the color sensor to the ground so it better senses the color. It was also touching the right wheel so we pushed the claw that will be picking up grandma half an inch with another lego piece. 
