@@ -177,3 +177,137 @@ while 1
      end
 end
 
+----------------------------------------------------------------------
+
+4/10/24: Changed a few things
+
+We changed the code in a few places. Instead of making the robot fully autonomous we changed it to where we can move the robot in the green and in the blue.
+Be able to pick up grandma and drop off grandma with claw. Added a new touch sensor but decided to take it out. Implemented a kill switch for quicker iteration. 
+Cable management was another issue we had which we fixed. We also added a few extra lego peices to make the robot more sturdy and stable while making turns and 
+executing commands. 
+
+global key
+InitKeyboard();
+distance = brick.UltrasonicDist(4);
+display(distance);
+brick.SetColorMode(3, 2);
+color = brick.ColorCode(3);
+display(color);
+while 1
+   distance = brick.UltrasonicDist(4);
+   display(distance);
+   brick.SetColorMode(3, 2);
+   color = brick.ColorCode(3);
+   display(color);
+   brick.MoveMotor('A', 50);
+   brick.MoveMotor('D', 51);
+   touch = brick.TouchPressed(2);
+   touch2 = brick.TouchPressed(1);
+   
+    if distance > 45
+       brick.StopMotor('a');
+       pause(1.25);
+       brick.MoveMotor('a',50);
+       pause(1.3);
+       distance = brick.UltrasonicDist(4);
+       display(distance);
+    end
+    if touch2
+        brick.MoveMotor('AD',-50);
+        pause(1.1)
+        brick.StopMotor('A');
+        pause(1.1)
+    end
+             
+     if touch
+        brick.StopAllMotors();
+        pause(5);
+     end
+     if color == 5
+       brick.StopAllMotors();
+       pause(1)
+       brick.MoveMotor('A', 50);
+       brick.MoveMotor('D', 51);
+       pause(2)
+     end
+     while color == 2
+         pause(0.1);
+        brick.SetColorMode(3, 2);
+        color = brick.ColorCode(3);
+        display(color);
+       switch key
+       case 'uparrow'
+           disp('Up Arrow Pressed!');
+           brick.MoveMotor('A', 50);
+           brick.MoveMotor('D', 50);
+      
+       case 'downarrow'
+           disp('Down Arrow Pressed!');
+           brick.MoveMotor('A', -50);
+           brick.MoveMotor('D', -50);
+       case 'leftarrow'
+           disp('Left Arrow Pressed!');
+           brick.MoveMotor('A', 50);
+       case 'rightarrow'
+           disp('Right Arrow Pressed');
+           brick.MoveMotor('D', 50);
+       case 'space'
+           disp('Space Pressed!');
+           brick.MoveMotor('C', 5);
+       case 'c'
+           disp('C Pressed!');
+           brick.MoveMotor('C', -5);
+       case 0
+           disp('No Key Pressed!');
+           brick.StopMotor('A');
+           brick.StopMotor('B');
+           brick.StopMotor('C');
+           brick.StopMotor('D');
+       case 'q'
+           break;
+       end
+     end
+     while color == 3
+       pause(0.1);
+       brick.SetColorMode(3, 2);
+       color = brick.ColorCode(3);
+       display(color);
+       switch key
+       case 'uparrow'
+           disp('Up Arrow Pressed!');
+           brick.MoveMotor('A', 50);
+           brick.MoveMotor('D', 50);
+      
+       case 'downarrow'
+           disp('Down Arrow Pressed!');
+           brick.MoveMotor('A', -50);
+           brick.MoveMotor('D', -50);
+       case 'leftarrow'
+           disp('Left Arrow Pressed!');
+           brick.MoveMotor('A', 50);
+       case 'rightarrow'
+           disp('Right Arrow Pressed');
+           brick.MoveMotor('D', 50);
+       case 'space'
+           disp('Space Pressed!');
+           brick.MoveMotor('C',-5);
+       case 0
+           disp('No Key Pressed!');
+           brick.StopMotor('A');
+           brick.StopMotor('B');
+           brick.StopMotor('C');
+           brick.StopMotor('D');
+       case 'q'
+           break;
+       end
+     end
+     if color == 4
+       brick.StopAllMotors();
+       pause(2)
+       brick.MoveMotor('A', 50);
+       brick.MoveMotor('D', 51);
+       pause(2)
+     end
+end
+
+
