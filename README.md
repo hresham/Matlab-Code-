@@ -30,3 +30,7 @@ Funny thing but we thought the entire maze had to be run through autonomously bu
 4/8/24 - Implemented kill switch and tweak turn degree
 
 Today was an important day. We took off one touch sensor and turned it into a kill switch to make the process easier. We implemented a test case to be able to pick up grandma at blue and drop off grandma. Lowered the color sensor to the ground so it better senses the color. It was also touching the right wheel so we pushed the claw that will be picking up grandma half an inch with another lego piece. Cable management overall has been solved with adding a few lego pieces to hold them together without interfering in the process of picking up grandma.
+
+4/10/24 - Minor adjustments
+
+We were able to throw in another if statement so that if the ultrasonic sensor get a little too close to the wall, it gives the right wheel a bit of a boost so it doesn't touch the wall. We then corrected the other tire and adjusted it so it pushes the same power as the right tire. After that if statement is finished, we go backinto the while loop and iterate through that. 
