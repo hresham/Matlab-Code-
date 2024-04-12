@@ -34,3 +34,5 @@ Today was an important day. We took off one touch sensor and turned it into a ki
 4/10/24 - Minor adjustments
 
 We were able to throw in another if statement so that if the ultrasonic sensor get a little too close to the wall, it gives the right wheel a bit of a boost so it doesn't touch the wall. We then corrected the other tire and adjusted it so it pushes the same power as the right tire. After that if statement is finished, we go backinto the while loop and iterate through that. Were having issues with the code, we had to comment out the color sensors to make it turn right and making sure it turned smoothly. 
+
+4/15/24 - Cont. current iteration and design process for smooth demo coming uo soon
