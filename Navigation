@@ -311,3 +311,137 @@ while 1
 end
 
 --------------------------------------------------------
+
+4/17/24
+
+global key
+InitKeyboard();
+distance = brick.UltrasonicDist(4);
+display(distance);
+brick.SetColorMode(3, 2);
+color = brick.ColorCode(3);
+display(color);
+while 1
+   distance = brick.UltrasonicDist(4);
+   display(distance);
+   color = brick.ColorCode(3);
+   %display(color);
+   brick.MoveMotor('A', 40);
+   brick.MoveMotor('D', 42);
+   touch = brick.TouchPressed(2);
+   touch2 = brick.TouchPressed(1);
+   if distance > 55
+       brick.StopAllMotors;
+       disp('turn right');
+       pause(.5);
+       brick.MoveMotor('D',40);
+       pause(1.5);
+       brick.MoveMotor('A',40);
+       pause(2.2);
+   end
+   if distance < 10
+       disp('adjusting');
+       brick.MoveMotor('A',60);
+       pause(1.5);
+       brick.MoveMotor('A',40);
+       brick.MoveMotor('D',60);
+       pause(1);
+   end
+   if touch2
+       disp('turn left');
+       brick.MoveMotor('AD',-50);
+       pause(.7)
+       brick.StopMotor('A');
+       pause(1.2)
+       brick.MoveMotor('AD', 40);
+       pause(2);
+   end
+   if touch
+       disp('break out');
+       brick.StopAllMotors();
+       break;
+   end
+   if color == 5
+       brick.StopAllMotors();
+       pause(1)
+       brick.MoveMotor('A', 40);
+       brick.MoveMotor('D', 41);
+       pause(2)
+   end
+   while color == 2
+       pause(0.1);
+       brick.SetColorMode(3, 2);
+       color = brick.ColorCode(3);
+       display(color);
+       switch key
+           case 'uparrow'
+               disp('Up Arrow Pressed!');
+               brick.MoveMotor('A', 50);
+               brick.MoveMotor('D', 50);
+           case 'downarrow'
+               disp('Down Arrow Pressed!');
+               brick.MoveMotor('A', -50);
+               brick.MoveMotor('D', -50);
+           case 'leftarrow'
+               disp('Left Arrow Pressed!');
+               brick.MoveMotor('A', 50);
+           case 'rightarrow'
+               disp('Right Arrow Pressed');
+               brick.MoveMotor('D', 50);
+           case 'space'
+               disp('Space Pressed!');
+               brick.MoveMotor('C', 5);
+           case 'c'
+               disp('C Pressed!');
+               brick.MoveMotor('C', -5);
+           case 0
+               disp('No Key Pressed!');
+               brick.StopMotor('A');
+               brick.StopMotor('B');
+               brick.StopMotor('C');
+               brick.StopMotor('D');
+           case 'q'
+               break;
+       end
+   end
+   while color == 3
+       pause(0.1);
+       brick.SetColorMode(3, 2);
+       color = brick.ColorCode(3);
+       display(color);
+       switch key
+           case 'uparrow'
+               disp('Up Arrow Pressed!');
+               brick.MoveMotor('A', 50);
+               brick.MoveMotor('D', 50);
+           case 'downarrow'
+               disp('Down Arrow Pressed!');
+               brick.MoveMotor('A', -50);
+               brick.MoveMotor('D', -50);
+           case 'leftarrow'
+               disp('Left Arrow Pressed!');
+               brick.MoveMotor('A', 50);
+           case 'rightarrow'
+               disp('Right Arrow Pressed');
+               brick.MoveMotor('D', 50);
+           case 'space'
+               disp('Space Pressed!');
+               brick.MoveMotor('C',-5);
+           case 0
+               disp('No Key Pressed!');
+               brick.StopMotor('A');
+               brick.StopMotor('B');
+               brick.StopMotor('C');
+               brick.StopMotor('D');
+           case 'q'
+               break;
+       end
+   end
+   if color == 4
+       brick.StopAllMotors();
+       pause(2)
+       brick.MoveMotor('A', 40);
+       brick.MoveMotor('D', 40);
+       pause(2)
+   end
+end
