@@ -38,3 +38,7 @@ We were able to throw in another if statement so that if the ultrasonic sensor g
 4/15/24 - Cont. current iteration and design process for smooth demo coming uo soon
 
 Added another tire to the touch sensor so sending the wall become accurate and is able to make sharper turns. We also added pieces to the sides of the robot so for any mistakes with the turning or if it is not going straight, it helps straighten the robots trajectory. Next week is the demo so we are constantly iterating through the code and making sure it runs as it should and taking care of any problems that come our way.
+
+4/17/24 - Pre demo integration
+
+Today we are working on making the overall design better for demo next week. I believe that we have the concept down and we can go through the maze without any major errors. Switching small peices and making robot run smoothly is number 1 priority. 
