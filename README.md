@@ -1,4 +1,4 @@
-![A9DE34E0-7DEF-4748-853C-C497B2B2005B_1_102_o](https://github.com/elvis808/Matlab-Code-/assets/67409144/ba7fe0cc-32f5-49f4-bb03-1fee1855dfc7)# Matlab-EV3 Capstone Project
+# Matlab-EV3 Capstone Project
 
 3/13/24 - Remote Control & Color Sensor
 Implemented to go north, south and pick up grandma. Currently implementing color sensor.
