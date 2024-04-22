@@ -45,4 +45,4 @@ Today we are working on making the overall design better for demo next week. I b
 
 4/22/24 - DEMO DAY!!!
 
-
+Demo went really well. Full demo will can be watched at https://youtu.be/N6qQGWTIW2M. This class by Dr. Clough, FSE 100 was a fun class. Taught me how to learn and learned how to unlearn some topics also. Hope you enjoy this repository, Peace!
