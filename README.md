@@ -1,4 +1,4 @@
-# Matlab-Code
+# Matlab-EV3 Capstone Project
 
 3/13/24 - Remote Control & Color Sensor
 Implemented to go north, south and pick up grandma. Currently implementing color sensor.
@@ -42,4 +42,13 @@ Added another tire to the touch sensor so sending the wall become accurate and i
 
 4/17/24 - Pre demo integration
 
-Today we are working on making the overall design better for demo next week. I believe that we have the concept down and we can go through the maze without any major errors. Switching small peices and making robot run smoothly is number 1 priority. 
+Today we are working on making the overall design better for demo next week. I believe that we have the concept down and we can go through the maze without any major errors. Switching small peices and making robot run smoothly is number 1 priority. Debating on putting the ultrasonic sensor on the left side in order for the robot to follow the left wall instead of the right. Thought about adding gyroscope sensor, but decided that we are not adding it because of the drifting and inefficency to run smoothly.
+
+4/22/24 - DEMO DAY!!!
+
+Final pictures of EV3 Lego robot.
+![A9DE34E0-7DEF-4748-853C-C497B2B2005B_1_102_o](https://github.com/elvis808/Matlab-Code-/assets/67409144/01ba4016-e16e-48b3-85b2-33395af37ebb)
+![ADD452D8-D5B6-4DC1-BA5C-0FDA15814190_1_102_o](https://github.com/elvis808/Matlab-Code-/assets/67409144/c679e45b-41c7-4976-a999-bbd2c505ca37)
+![09E1E6C6-C404-4583-B12F-16D00F241B52_1_102_o](https://github.com/elvis808/Matlab-Code-/assets/67409144/686dd678-c85d-4e31-ad51-9d01f1b55bee)
+
+Demo went really well. Full demo will can be watched at https://youtu.be/N6qQGWTIW2M. This class by Dr. Clough, FSE 100 was a fun class. Taught me how to learn and learned how to unlearn some topics also. Hope you enjoy this repository, Peace!
